@@ -3,19 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Delivery & Courier Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .service {
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: block;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Sign-In</h1>
-        <form id="orderForm">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="text" id="address" placeholder="Delivery Address" required>
-            <button type="submit">Place Order</button>
-        </form>
-        <div id="orderOutput"></div>
-    </div>
-    <script src="script.js"></script>
+
+<header>
+    <h1>Fast Delivery & Courier Service</h1>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="signin.html">Sign In</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Same-Day Delivery</h3>
+            <p>Get your packages delivered on the same day within the city.</p>
+        </div>
+        <div class="service">
+            <h3>International Shipping</h3>
+            <p>We offer reliable shipping services to various countries worldwide.</p>
+        </div>
+        <div class="service">
+            <h3>Package Tracking</h3>
+            <p>Track your deliveries in real-time using our online tracking system.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a leading delivery and courier service with years of experience in providing reliable and efficient services. Our mission is to ensure your packages reach their destination safely and on time.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@deliveryservice.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Fast Delivery & Courier Service</p>
+</footer>
+
 </body>
 </html>
