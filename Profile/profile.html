@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>User Profile</h1>
+    <nav>
+        <a href="../Home.html">Home</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Item Name: <span id="profileItemName"></span></h2>
+    <p><strong>Username:</strong> <span id="profileUsername"></span></p>
+    <p><strong>Delivery Address:</strong> <span id="profileAddress"></span></p>
+    <p><strong>Weight:</strong> <span id="profileWeight"></span> kg</p>
+    <p><strong>Description:</strong> <span id="profileDescription"></span></p>
+</div>
+
+
+<script>
+    // Retrieve data from local storage
+    document.getElementById('profileUsername').textContent = localStorage.getItem('username');
+    document.getElementById('profileAddress').textContent = localStorage.getItem('address');
+    document.getElementById('profileItemName').textContent = localStorage.getItem('itemName');
+    document.getElementById('profileWeight').textContent = localStorage.getItem('weight');
+    document.getElementById('profileDescription').textContent = localStorage.getItem('description');
+
+    console.log(localStorage.getItem('username'));
+console.log(localStorage.getItem('address'));
+// Add more as needed
+</script>
+
+
+</body>
+</html>
