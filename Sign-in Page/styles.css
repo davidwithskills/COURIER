@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    position: relative;
+    margin: 0;
+}
+
+.home-link {
+    position: absolute;
+    top: 20px; /* Adjusted to place it at the top */
+    left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 100px auto;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 15px; /* Increased padding */
+    width: calc(100% - 30px); /* Adjusted for padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increased font size */
+}
+
+input[type="file"] {
+    padding: 5px; /* Adjust padding for file input */
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 15px; /* Increased padding */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; /* Increased font size */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#orderOutput {
+    margin-top: 20px;
+    text-align: center;
+}
