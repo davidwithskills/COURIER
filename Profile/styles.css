@@ -1,44 +1,47 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    position: relative;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.home-link {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    margin: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 18px;
 }
 
 .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
     background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 100px auto;
-    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
+footer {
     text-align: center;
-    color: #333;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.profile-info {
-    margin-top: 20px;
-}
-
-.profile-info h3 {
-    margin-top: 20px;
-}
-
-button {
+.profile-button {
     padding: 10px;
     background-color: #28a745;
     color: white;
@@ -48,6 +51,18 @@ button {
     width: 100%;
 }
 
-button:hover {
+.profile-button:hover {
     background-color: #218838;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
